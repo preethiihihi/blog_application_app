@@ -16,7 +16,7 @@ import Root from './Root'
 const AppNavigator=()=>{
      return(
           <>
-          <Text>hello</Text>
+          <Root/>
           </>
      )
 }

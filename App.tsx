@@ -8,6 +8,7 @@
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
+  AppRegistry,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -19,15 +20,13 @@ import {
 } from 'react-native';
 
 import AppNavigator from './navigators/AppNavigator';
+import Root from './navigators/Root';
 
 function App(): JSX.Element {
   return (
-    <SafeAreaView >
-    <Text>hello i am going to be a good app</Text>
-      <TouchableOpacity onPress={()=>{console.log("hello i came to screen")}}>
-        <Text>click me </Text>
-      </TouchableOpacity>
-    </SafeAreaView>
+   
+       <AppNavigator/>
+  
   );
 }
 
